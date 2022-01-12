@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #F3F1FF;;
+        }
+        .players-info{
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+
+        }
+
+        .players-info img{
+            width: 56px;
+            height: 56px;  
+        }
+
+        .player-name{
+            font-size: 18px;
+            margin-left: 16px;
+        }
+
+        .players{
+            display: grid;
+            grid-template-columns : repeat(3 , 1fr);
+            grid-row-gap: 21px;
+            /* margin-top: 20px; */
+        }
+
+        .container{
+            width : 870px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            height: 679px;
+        }
+        .top-players{
+            padding-left: 33px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            color: #562EFF;
+        }
+        hr{
+            width: 807px;
+            height: 0px;    
+            border: 1px solid #D1D1D1;
+        }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- top players and top blogs -->
+        <section class="container">
+            <section class="top-players">
+                <h2 id="top-player-heading">Top Player</h2>
+                <div class="players">
+                    <div class="players-info">
+                        <img src="images/players/player-1.png" alt="" class="player-photo">
+                        <h3 class="player-name">John Smith</h3>
+                    </div>
+                    <div class="players-info">
+                        <img src="images/players/player-2.png" alt="" class="player-photo">
+                        <h3 class="player-name">Pro Rasel</h3>
+                    </div>
+                    <div class="players-info">
+                        <img src="images/players/player-3.png" alt="" class="player-photo">
+                        <h3 class="player-name">Abu Sufian</h3>
+                    </div>
+                    <div class="players-info">
+                        <img src="images/players/player-4.png" alt="" class="player-photo">
+                        <h3 class="player-name">Shajedul Karim</h3>
+                    </div>
+                    <div class="players-info">
+                        <img src="images/players/player-5.png" alt="" class="player-photo">
+                        <h3 class="player-name">Maruf Ahmed</h3>
+                    </div>
+                    <div class="players-info">
+                        <img src="images/players/player-6.png" alt="" class="player-photo">
+                        <h3 class="player-name">Mujahid</h3>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="blog-posts">
+                <h2>Top Blog</h2>
+                <article class="blog">
+                    <img src="images/blogs/blog-1.png" alt="" class="thumbnail">
+                    <div class="blog-info">
+                        <div class="blog-title">13 of My Favorite UI/UX Goodies</div>
+                        <a href="" class="blog-author"></a>
+                    </div>
+                </article>
+            </section>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
